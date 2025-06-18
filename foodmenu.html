@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--<< Header Area >>-->
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="gramentheme">
+    <meta name="description" content="Fresheat food & Restaurant Html Template">
+    <!-- ======== Page title ============ -->
+    <title>ARYANA CAFE & BAKERY</title>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!--<< Favcion >>-->
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <!--<< Bootstrap min.css >>-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--<< All Min Css >>-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!--<< Animate.css >>-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--<< Magnific Popup.css >>-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!--<< MeanMenu.css >>-->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!--<< Swiper Bundle.css >>-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--<< Nice Select.css >>-->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!--<< Main.css >>-->
+    <link rel="stylesheet" href="assets/css/main.css">
+    
+</head>
+<style>
+    html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.gradient-text {
+  background: linear-gradient(
+    135deg,
+    #B49A75 0%,
+    #D7C7B2 40%,
+    #fff8ec 60%,
+    #B49A75 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  display: inline-block;
+  position: relative;
+  font-weight: 700;
+  filter: drop-shadow(0 1px 1px rgba(0,0,0,0.3));
+  background-size: 200%;
+  animation: gradientMove 5s infinite alternate;
+}
+
+/* Glossy Shine Overlay */
+/* Background shimmer motion */
+@keyframes gradientMove {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+    .single-menu-items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        background: rgba(255, 255, 255, 0.05);
+        padding: 15px;
+        border-radius: 10px;
+        flex-wrap: wrap;
+    }
+
+    .single-menu-items .details {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        flex: 1 1 70%;
+    }
+
+    .menu-item-thumb img {
+        border-radius: 8px;
+    }
+
+    .menu-content h3 {
+        font-size: 1.1rem;
+        color: #fff;
+        margin: 0;
+    }
+
+    .single-menu-items h6 {
+        font-weight: bold;
+        color: white;
+        margin: 0;
+    }
+
+    @media (max-width: 768px) {
+        .menu-content h3 {
+            font-size: 1rem;
+        }
+
+        .single-menu-items {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .single-menu-items h6 {
+            margin-top: 10px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .menu-item-thumb img {
+            width: 60px !important;
+            height: 60px !important;
+        }
+
+        .menu-content h3 {
+            font-size: 0.95rem;
+        }
+
+        .single-menu-items {
+            padding: 10px;
+        }
+    }
+    .login-btn {
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  background: linear-gradient(45deg, #4E342E, #3A2B1F); /* Coffee brown gradient */
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  margin-left: 20px;
+}
+
+/* Hover Effect */
+.login-btn:hover {
+  background: linear-gradient(45deg, #3A2B1F, #2E1D12);
+  box-shadow: 0 0 10px rgba(58, 43, 31, 0.6);
+  transform: scale(1.05);
+}
+
+/* Pulse Animation */
+.pulse-animation {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(58, 43, 31, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(58, 43, 31, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(58, 43, 31, 0);
+  }
+}
+
+
+.order-btn1 {
+  position: absolute;
+  right: 30px;
+  top: 22px;
+  width: 50px;
+  height: 50px;
+  background: #ff4d4d;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 20px;
+  box-shadow: 0 0 15px rgba(255, 77, 77, 0.5);
+  transition: transform 0.3s ease;
+  z-index: 999;
+}
+
+.order-btn1:hover {
+  background: #4B3621;
+  transform: scale(1.1);
+}
+
+.pulse-animation {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(255, 77, 77, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 77, 77, 0);
+  }
+}
+.blog-card {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.blog-thumb img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.blog-content {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 15px;
+}
+.single-menu-items {
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.single-menu-items:hover {
+    background-color: black; /* light background on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* soft shadow */
+    transform: translateY(-5px); /* slight lift */
+    cursor: pointer;
+}
+ /* Animated pills */
+  .nav-pills .nav-link {
+    border-radius: 50px;
+    padding: 10px 25px;
+    margin: 5px;
+    font-weight: bold;
+    transition: background 0.4s, color 0.4s, box-shadow 0.4s;
+  }
+
+  .nav-pills .nav-link.active {
+    background-color: #dc3545;
+    color: #fff;
+    box-shadow: 0 0 12px rgba(220, 53, 69, 0.6);
+  }
+
+  /* Card animation */
+  .food-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+
+  }
+
+  .food-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(220, 53, 69, 0.2);
+  }
+
+  .food-card img {
+    height: 300px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+  }
+
+  .food-card .card-body {
+    background: #fff;
+    text-align: center;
+  }
+
+  .price {
+    color: #dc3545;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+
+  /* Fade animation for tab panes */
+  .tab-pane {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  </style>
+
+<body class="bg-color2">
+
+    <!-- Preloader Start -->
+    <div id="preloader" class="preloader">
+        <div class="animation-preloader">
+            <div class="spinner">
+            </div>
+            <div class="txt-loading">
+                <span data-text-preloader="A" class="letters-loading">
+                    A
+                </span>
+                <span data-text-preloader="R" class="letters-loading">
+                    R
+                </span>
+                <span data-text-preloader="Y" class="letters-loading">
+                    Y
+                </span>
+                <span data-text-preloader="A" class="letters-loading">
+                    A
+                </span>
+                <span data-text-preloader="N" class="letters-loading">
+                    N
+                </span>
+                <span data-text-preloader="A" class="letters-loading">
+                    A
+                </span>
+               
+               
+            </div>
+            <p class="text-center">CAFE & BAKERY</p>
+        </div>
+        <div class="loader">
+            <div class="row">
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<< Mouse Cursor Start >>-->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+
+    <!-- Back To Top Start -->
+    <button id="back-top" class="back-to-top">
+        <i class="fa-regular fa-arrow-up"></i>
+    </button>
+
+    
+<!-- Header Section Start -->
+<!-- Header Section Start -->
+<header class="header-section">
+  <div class="container-fluid" style="height: 90px;">
+    <div class="d-flex justify-content-between align-items-center py-3">
+
+      <!-- Logo -->
+      <a href="index.html" class="gradient-logo"></a>
+
+      <!-- Hamburger for Mobile -->
+      <div class="header__hamburger d-xl-none" id="mobile-menu-toggle">
+        <i class="fas fa-bars" style="color: white; font-size: 24px;"></i>
+      </div>
+
+      <!-- Desktop Menu -->
+      <nav class="main-menu d-none d-xl-block" style="font-family: Georgia; margin-top: 15px; margin-left: 350px;">
+        <ul class="d-flex list-unstyled m-0 " style="font-weight: bolder; font-size: large; margin-left: 600px;">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about" style="margin-left: 30px;">About Us</a></li>
+          <li><a href="#cta" style="margin-left: 30px;">Offers</a></li>
+          <li><a href="#menu" style="margin-left: 30px;">Food Menu</a></li>
+          <li><a href="#gallery" style="margin-left: 30px;">Gallery</a></li>
+          <li><a href="#campus" style="margin-left: 30px;">Campus Life</a></li>
+         <li>
+  <a href="login.html" class="login-btn pulse-animation text-white">
+    Login / Signup
+  </a>
+</li>
+
+        
+        </ul>
+      </nav>
+
+      <!-- Right-side Buttons -->
+      <div class="d-none d-xl-flex align-items-center">
+        <!-- Zomato Order Button -->
+        <a href="https://www.zomato.com/jalandhar/aryana-cafe-bakery-nakodar-road" target="_blank" class="order-btn1 pulse-animation" style="margin-right: 20px;">
+          <i class="fas fa-utensils" style="margin-top: 5px;"></i>
+        </a>
+
+      
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu d-xl-none" id="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#cta" style="margin-left: 30px;">Offers</a>
+    <a href="#menu" style="margin-left: 30px;">Food Menu</a>
+    <a href="#gallery" style="margin-left: 30px;">Gallery</a>
+    <a href="#campus" style="margin-left: 30px;">Campus Life</a>
+    <a href="https://www.zomato.com" target="_blank">Order on Zomato</a>
+    
+    <!-- Login/Signup for Mobile -->
+    <a href="login.html" style=" font-weight: bold;">Login / Signup</a>
+  </div>
+</header>
+
+    <!-- Food Menu section  S T A R T -->
+  <div class="container py-5" style="margin-top: 80px;">
+  <h2 class="text-center mb-5">✨ Explore Our Menu ✨</h2>
+
+  <!-- Pills navigation -->
+  <ul class="nav nav-pills justify-content-center mb-5" id="menuTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="fastfood-tab" data-bs-toggle="pill" data-bs-target="#fastfood" type="button" role="tab">🍟 Fast Food</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="drinks-tab" data-bs-toggle="pill" data-bs-target="#drinks" type="button" role="tab">🥤 Drinks & Shakes</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="maincourse-tab" data-bs-toggle="pill" data-bs-target="#maincourse" type="button" role="tab">🍛 Main Course</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="cakes-tab" data-bs-toggle="pill" data-bs-target="#cakes" type="button" role="tab">🎂 Cakes & More</button>
+    </li>
+  </ul>
+
+  <!-- Tab content -->
+  <div class="tab-content" id="menuTabContent">
+
+    <!-- Fast Food -->
+    <div class="tab-pane fade show active" id="fastfood" role="tabpanel">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card food-card h-100">
+            <img src="images/vnool.png" class="card-img-top" alt="VEG NOODLES">
+            <div class="card-body">
+              <h5 class="card-title">VEG NOODLES</h5>
+              <p class="price">&#8377;80</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card food-card h-100">
+            <img src="images/ffries.png" class="card-img-top" alt="French Fries">
+            <div class="card-body">
+              <h5 class="card-title">FRENCH FRIES</h5>
+              <p class="price">&#8377;80</p>
+            </div>
+          </div>
+        </div>
+        <!-- Add more Fast Food items -->
+      </div>
+    </div>
+
+    <!-- Drinks & Shakes -->
+    <div class="tab-pane fade" id="drinks" role="tabpanel">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card food-card h-100">
+            <img src="images/mango_shake.jpg" class="card-img-top" alt="Mango Shake">
+            <div class="card-body">
+              <h5 class="card-title">MANGO SHAKE</h5>
+              <p class="price">&#8377;70</p>
+            </div>
+          </div>
+        </div>
+        <!-- Add more drinks -->
+      </div>
+    </div>
+
+    <!-- Main Course -->
+    <div class="tab-pane fade" id="maincourse" role="tabpanel">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card food-card h-100">
+            <img src="images/PAZTA.png" class="card-img-top" alt="PASTA">
+            <div class="card-body">
+              <h5 class="card-title">PASTA</h5>
+              <p class="price">&#8377;110</p>
+            </div>
+          </div>
+        </div>
+        <!-- Add more main course -->
+      </div>
+    </div>
+
+    <!-- Cakes & More -->
+    <div class="tab-pane fade" id="cakes" role="tabpanel">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card food-card h-100">
+            <img src="images/cake1.jpg" class="card-img-top" alt="Chocolate Cake">
+            <div class="card-body">
+              <h5 class="card-title">CHOCOLATE CAKE</h5>
+              <p class="price">&#8377;150</p>
+            </div>
+          </div>
+        </div>
+        <!-- Add more cake items -->
+      </div>
+    </div>
+  </div>
+</div>      <div class="marquee-wrapper style-1 text-slider section-padding pt-0 mt-5">
+            <div class="marquee-inner to-left">
+                <ul class="marqee-list d-flex">
+                    <li class="marquee-item style1">
+                        <span class="text-slider"></span><span class="text-slider text-style">FAST FOOD</span>
+                        <span class="text-slider"></span><span class="text-slider text-style">MAIN COURSE</span>
+                        <span class="text-slider"></span><span class="text-slider text-style">DRINKS</span>
+                        <span class="text-slider"></span><span class="text-slider text-style">SHAKES</span>
+                        <span class="text-slider"></span><span class="text-slider text-style">CAKES</span>
+                        <span class="text-slider"></span><span class="text-slider text-style">PASTERIES</span>
+                        <span class="text-slider"></span><span class="text-slider text-style">DOUGHNUTS</span>
+                        <span class="text-slider"></span><span class="text-slider text-style">FAST FOOD</span>
+                        <span class="text-slider"></span><span class="text-slider text-style">MAIN COURSE</span>
+                        <span class="text-slider"></span><span class="text-slider text-style">DRINKS</span>
+                        <span class="text-slider"></span><span class="text-slider text-style">SHAKES</span>
+                        <span class="text-slider"></span><span class="text-slider text-style">CAKES</span>
+                        <span class="text-slider"></span><span class="text-slider text-style">PASTERIES</span>
+                        <span class="text-slider"></span><span class="text-slider text-style">DOUGHNUTS</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer Section    S T A R T -->
+    <footer class="footer-section bg-title fix">
+        <div class="footer-widgets-wrapper">
+            <div class="shape1 float-bob-y d-none d-xxl-block"><img src="assets/img/shape/footerShape1_1.png"
+                    alt="shape"></div>
+            <div class="shape2 d-none d-xxl-block"><img src="assets/img/shape/footerShape1_2.png" alt="shape"></div>
+            <div class="shape3 d-none d-xxl-block"><img src="assets/img/shape/footerShape1_3.png" alt="shape"></div>
+            <div class="shape4  d-none d-xxl-block"><img src="assets/img/shape/footerShape1_4.png" alt="shape"></div>
+            <div class="container">
+                <div class="footer-top">
+                    <div class="row gy-4">
+                        <div class="col-lg-4">
+                            <div class="fancy-box">
+                                <div class="item1"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="item2">
+                                    <h6>ADDRESS</h6>
+                                    <p>SHAHPUR CAMPUS , NAKODER ROAD ,JALANDHAR </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-start justify-content-lg-end">
+                            <div class="fancy-box">
+                                <div class="item1"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="item2">
+                                    <h6>SEND EMAIL</h6>
+                                    <p>info@aryana.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-start justify-content-lg-end">
+                            <div class="fancy-box">
+                                <div class="item1"><i class="fa-regular fa-phone-volume"></i></div>
+                                <div class="item2">
+                                    <h6>PLACE A ORDER ON:</h6>
+                                    <p>+91 987654321</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                        <div class="single-footer-widget">
+                            <div class="widget-head">
+                                <a href="index.html" style="color: white; font-size: xx-large; font-family: Georgia; font-weight: bolder;">ARYANA
+                                    
+                                </a>
+                            </div>
+                            <div class="footer-content">
+                                <p>
+                 Sells a variety of baked goods like bread, pastries, and cakes, along with coffee, tea, and other beverages, and potentially light meals or snacks. 
+                                </p>
+                                <div class="social-icon d-flex align-items-center">
+                                    <a href="https://www.facebook.com/share/15arW9XECg/"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="http://twitter.com/CTGroupshahpur"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.instagram.com/ctgroupofinstitutions?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="assets/img/icon/camera.svg" style="height:20px"></a>
+                                    <a href="https://www.youtube.com/@CTNewsJalandhar"><i class="fa-brands fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 ps-xl-5 wow fadeInUp" data-wow-delay=".4s">
+                        <div class="single-footer-widget">
+                            <div class="widget-head">
+                                <h3>Quick Links</h3>
+                            </div>
+                            <ul class="list-area">
+                                <li>
+                                    <a href="#about">
+                                        <i class="fa-solid fa-chevrons-right"></i>
+                                        About Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#gallery">
+                                        <i class="fa-solid fa-chevrons-right"></i>
+                                        Our Gallery
+                                    </a>
+                                </li>
+                              
+                              
+                                <li>
+                                    <a href="#menu">
+                                        <i class="fa-solid fa-chevrons-right"></i>
+                                        Food Menu
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 ps-xl-5 wow fadeInUp" data-wow-delay=".4s">
+                        <div class="single-footer-widget">
+                            <div class="widget-head">
+                                <h3>Our Menu</h3>
+                            </div>
+                            <ul class="list-area">
+                                <li>
+                                    <a href="#menu">
+                                        <i class="fa-solid fa-chevrons-right"></i>
+                                        Fast Food
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#menu">
+                                        <i class="fa-solid fa-chevrons-right"></i>
+                                        Shakes & Drinks
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#menu">
+                                        <i class="fa-solid fa-chevrons-right"></i>
+                                        Main Course
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#menu">
+                                        <i class="fa-solid fa-chevrons-right"></i>
+                                        Cakes & More
+                                    </a>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 ps-xl-5 wow fadeInUp" data-wow-delay=".4s">
+                        <div class="single-footer-widget">
+                            <div class="widget-head">
+                                <h3>Contact Us</h3>
+                            </div>
+                            <ul class="list-area">
+                                <li class="mb-2" style="color: #ffffff;">
+                                    Monday – Friday: <span class="text" style="color: white;"></span>
+                                </li>
+                                <li style="color: #ffffff;">
+                                    Saturday: <span class="text" style="color: white;"> 8am – 4:30pm </span>
+                                </li>
+                            </ul>
+                            <form action="#" class="mt-4">
+                                <div class="form-control">
+                                    <input class="email" type="email" placeholder="Your email address">
+                                    <button type="submit" class="submit-btn"><i
+                                            class="fa-solid fa-arrow-right-long"></i></button>
+                                </div>
+                                <div class="form-control style2 mt-3">
+                                    <input id="checkbox" name="checkbox" type="checkbox">
+                                    <label for="checkbox">I agree to the <a href="contact.html">Privacy Policy.
+                                        </a></label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-wrapper d-flex align-items-center justify-content-between">
+                    <p class="fw-bolder
+                     " data-wow-delay=".3s" style="text-align: center; font-family: Georgia;">
+                        © All Copyright 2025 by ARYANA
+                    </p>
+                  
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!--<< All JS Plugins >>-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!--<< Bootstrap Js >>-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--<< Waypoints Js >>-->
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <!--<< Counterup Js >>-->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!--<< Viewport Js >>-->
+    <script src="assets/js/viewport.jquery.js"></script>
+    <!--<< Magnific popup Js >>-->
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <!--<< Tilt Js >>-->
+    <script src="assets/js/tilt.min.js"></script>
+    <!--<< Swiper Slider Js >>-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--<< MeanMenu Js >>-->
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <!--<< Wow Animation Js >>-->
+    <script src="assets/js/wow.min.js"></script>
+    <!--<< Nice Select Js >>-->
+    <script src="assets/js/nice-select.min.js"></script>
+    <!--<< Main.js >>-->
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+  AOS.init();
+  
+ 
+  
+
+
+  // Toggle main mobile menu
+  document.getElementById('mobile-menu-toggle').addEventListener('click', function () {
+    document.getElementById('mobile-nav').classList.toggle('active');
+  });
+
+  // Toggle mobile dropdown
+  const dropdownToggle = document.querySelector('.dropdown-toggle-mobile');
+  dropdownToggle.addEventListener('click', function (e) {
+    e.preventDefault();
+    const parent = this.parentElement;
+    parent.classList.toggle('open');
+  });
+
+
+
+
+
+</script>
+</body>
+
+</html>
